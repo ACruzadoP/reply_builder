@@ -1,0 +1,1 @@
+This line has to be removed before launching the app for the 1st time. It was the only way I could add it to the repository. 
