@@ -17,4 +17,6 @@ After having developed this app, a third option started being available:
     3. Write every reply from scratch, using prefabs as well as prewritten sentences.
 
 
+Before launching for the first time, you will have to delete the content of "log.txt".
+
 A guide will be recorded and provided by me as soon as possible.
