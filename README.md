@@ -7,13 +7,13 @@ With that said, at certain point the PS agents have to spend long time in order 
 
 https://github.com/ACruzadoP/ps_prefabs_index
 
-However, I still had to read and fix the prefab before sending it and that was time consuming. At the time I only had two options:<br />
+However, I still had to read and fix the prefabs before sending them in order to make sure they were working for every situation, and that was time consuming. At the time I only had two options:
+
     1. Use prefabs.
     2. Write every reply from scratch.
 
+After having developed this app, a third option started being available:
 
-  
-After having developed this app, a third option started being available:<br />
     3. Write every reply from scratch, using prefabs as well as prewritten sentences.
 
 
