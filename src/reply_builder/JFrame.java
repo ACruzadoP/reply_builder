@@ -73,16 +73,19 @@ public class JFrame extends javax.swing.JFrame {
 			JFrame frame = new JFrame();
 			frame.setVisible(true);
 			String content = new String(Files.readAllBytes(Paths.get(System.getProperty("user.dir") + "/log.txt")));
-			InputStream file = new FileInputStream(content);
-			if (content.isEmpty() == false){
+			
+			if (!content.isEmpty()){
+				InputStream file = new FileInputStream(content);
 				workbook = new HSSFWorkbook(file);		        
-		        sheet_prewritsentences = workbook.getSheetAt(0);
-		        sheet_db = workbook.getSheetAt(1);
-		        ActualizarGUI interfaz = frame.new ActualizarGUI();
-		        interfaz.ActualizarTextoPanel("Please select a language");
-		        interfaz.MostrarBotones();
-		        interfaz.ActualizarTituloMainFrame(frame, content.substring(content.lastIndexOf("/") + 1));
-		        }
+		        	sheet_prewritsentences = workbook.getSheetAt(0);
+		        	sheet_db = workbook.getSheetAt(1);
+		        	ActualizarGUI interfaz = frame.new ActualizarGUI();
+		        	interfaz.ActualizarTextoPanel("Please select a language");
+		        	interfaz.MostrarBotones();
+		        	interfaz.ActualizarTituloMainFrame(frame, content.substring(content.lastIndexOf("/") + 1));
+		        	} else {
+		        		System.out.println("The file 'log.txt' seems to be empty");
+		        	}
 			} 
 		catch (Exception e) {
 			e.printStackTrace();
@@ -250,7 +253,7 @@ public class JFrame extends javax.swing.JFrame {
 				    d.setVisible(true);
 				    FileInputStream file = null;
 					try {
-						file = new FileInputStream(System.getProperty(d.getDirectory() + d.getFile()));
+						file = new FileInputStream(d.getDirectory() + d.getFile());
 						} 
 					catch (FileNotFoundException e2) {
 						e2.printStackTrace();
@@ -289,7 +292,7 @@ public class JFrame extends javax.swing.JFrame {
 				        interfaz.EsconderPanelesLaterales();
 				        interfaz.ReiniciarColorBotones();
 				        } else {
-				        		System.out.println("Por favor, usa el botónn Load");
+				        		System.out.println("Por favor, usa el botÃ³nn Load");
 				        		}
 					}
 				catch (Exception e1) {
