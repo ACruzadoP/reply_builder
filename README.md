@@ -4,7 +4,7 @@ If you have ever worked as a Player Support Agent, I'm pretty sure you have noti
 With that said, at certain point the PS agents have to spend long time in order to find the prefab that works better for a specific situation. When I realized about this issue, I thought it would be a good idea to create an Index of prefabs. As soon as I had an Index, I developed two Google Scripts that allowed me to get to the desired prefab as soon as possible.<br /><br />
 https://github.com/ACruzadoP/ps_prefabs_index
 
-However, I still had to read and fix the prefabs before sending them in order to make sure they were working for every situation, and that was time consuming. At the time I only had two options:<br /><br />
+However, I still had to read and fix the prefabs before sending them in order to make sure they were working for every situation, and that was time consuming. At the time I only had two options:<br />
 &nbsp;&nbsp;&nbsp;&nbsp;- Use prefabs.<br />
 &nbsp;&nbsp;&nbsp;&nbsp;- Write every reply from scratch.<br /><br />
 After having developed this app, a third option started being available:<br />
